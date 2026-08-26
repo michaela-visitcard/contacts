@@ -3,73 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#f4e9e4">
-  <meta name="description" content="Михаела — контакты и социальные сети">
-  <title>Михаела — контакты</title>
+  <meta name="theme-color" content="#d9e5ef">
+  <meta name="description" content="Михаела Бездомный — контакты и социальные сети">
+  <title>Михаела Бездомный — контакты</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <main class="page">
-    <article class="card" aria-label="Визитная карточка Михаелы">
-      <div class="photo-frame" aria-label="Место для фотографии">
-        <!--
-          Когда будет фотография, замените блок .photo-placeholder на:
-          <img class="photo" src="photo.webp" alt="Михаела">
-        -->
-        <div class="photo-placeholder" aria-hidden="true">
-          <svg viewBox="0 0 24 24" role="img">
-            <path d="M12 12.2a4.1 4.1 0 1 0 0-8.2 4.1 4.1 0 0 0 0 8.2Zm0 1.8c-4.9 0-8.2 2.5-8.2 5.3 0 .4.3.7.7.7h15c.4 0 .7-.3.7-.7 0-2.8-3.3-5.3-8.2-5.3Z"/>
-          </svg>
+    <article class="card-shell" aria-label="Визитная карточка Михаелы">
+      <section class="card-inner">
+        <div class="card-inner__overlay" aria-hidden="true"></div>
+
+        <div class="photo-frame" aria-label="Место для фотографии">
+          <!-- Когда будет фотография, замените блок .photo-placeholder на:
+          <img class="photo" src="photo.webp" alt="Михаела Бездомный"> -->
+          <div class="photo-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M12 12.2a4.1 4.1 0 1 0 0-8.2 4.1 4.1 0 0 0 0 8.2Zm0 1.8c-4.9 0-8.2 2.5-8.2 5.3 0 .4.3.7.7.7h15c.4 0 .7-.3.7-.7 0-2.8-3.3-5.3-8.2-5.3Z"/>
+            </svg>
+          </div>
         </div>
-      </div>
 
-      <header class="profile">
-        <h1>Михаела</h1>
-        <p class="subtitle">Всегда на связи</p>
-      </header>
+        <header class="profile">
+          <div class="monogram" aria-hidden="true">МБ</div>
+          <h1>Михаела</h1>
+          <p class="surname">БЕЗДОМНЫЙ</p>
+        </header>
 
-      <nav class="socials" aria-label="Социальные сети">
-        <a class="social-link" href="#" aria-label="Telegram Михаелы">
-          <span class="social-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <path d="M21.8 3.1 18.6 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.1 13.8l-4.8-1.5c-1-.3-1.1-1 .2-1.5L20.3 3.5c.9-.3 1.7.2 1.5-.4Z"/>
-            </svg>
-          </span>
-          <span>Telegram</span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
+        <nav class="socials" aria-label="Социальные сети">
+          <a class="social-link" href="#" aria-label="Telegram Михаелы">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M21.8 3.1 18.6 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.1 13.8l-4.8-1.5c-1-.3-1.1-1 .2-1.5L20.3 3.5c.9-.3 1.7.2 1.5-.4Z"/>
+              </svg>
+            </span>
+            <span class="social-text">
+              <span class="social-name">Telegram</span>
+              <span class="social-meta">написать</span>
+            </span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
 
-        <a class="social-link" href="#" aria-label="WhatsApp Михаелы">
-          <span class="social-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <path d="M12 2a9.7 9.7 0 0 0-8.4 14.6L2 22l5.5-1.5A9.8 9.8 0 1 0 12 2Zm0 17.8a8 8 0 0 1-4.1-1.1l-.3-.2-3.3.9.9-3.2-.2-.3A8 8 0 1 1 12 19.8Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.1 7.1 0 0 1-1.3-1.6c-.1-.2 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.2-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.8.1.2 1.9 3 4.7 4.1 2.8 1.1 2.8.7 3.3.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3Z"/>
-            </svg>
-          </span>
-          <span>WhatsApp</span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
+          <a class="social-link" href="#" aria-label="WhatsApp Михаелы">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2a9.7 9.7 0 0 0-8.4 14.6L2 22l5.5-1.5A9.8 9.8 0 1 0 12 2Zm0 17.8a8 8 0 0 1-4.1-1.1l-.3-.2-3.3.9.9-3.2-.2-.3A8 8 0 1 1 12 19.8Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.1 7.1 0 0 1-1.3-1.6c-.1-.2 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.2-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.8.1.2 1.9 3 4.7 4.1 2.8 1.1 2.8.7 3.3.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3Z"/>
+              </svg>
+            </span>
+            <span class="social-text">
+              <span class="social-name">WhatsApp</span>
+              <span class="social-meta">написать</span>
+            </span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
 
-        <a class="social-link" href="#" aria-label="Instagram Михаелы">
-          <span class="social-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <path d="M7.4 2h9.2A5.4 5.4 0 0 1 22 7.4v9.2a5.4 5.4 0 0 1-5.4 5.4H7.4A5.4 5.4 0 0 1 2 16.6V7.4A5.4 5.4 0 0 1 7.4 2Zm0 1.8a3.6 3.6 0 0 0-3.6 3.6v9.2a3.6 3.6 0 0 0 3.6 3.6h9.2a3.6 3.6 0 0 0 3.6-3.6V7.4a3.6 3.6 0 0 0-3.6-3.6H7.4Zm9.8 1.4a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6ZM12 6.9a5.1 5.1 0 1 1 0 10.2 5.1 5.1 0 0 1 0-10.2Zm0 1.8a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6Z"/>
-            </svg>
-          </span>
-          <span>Instagram</span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
+          <a class="social-link" href="#" aria-label="Instagram Михаелы">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M7.4 2h9.2A5.4 5.4 0 0 1 22 7.4v9.2a5.4 5.4 0 0 1-5.4 5.4H7.4A5.4 5.4 0 0 1 2 16.6V7.4A5.4 5.4 0 0 1 7.4 2Zm0 1.8a3.6 3.6 0 0 0-3.6 3.6v9.2a3.6 3.6 0 0 0 3.6 3.6h9.2a3.6 3.6 0 0 0 3.6-3.6V7.4a3.6 3.6 0 0 0-3.6-3.6H7.4Zm9.8 1.4a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6ZM12 6.9a5.1 5.1 0 1 1 0 10.2 5.1 5.1 0 0 1 0-10.2Zm0 1.8a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6Z"/>
+              </svg>
+            </span>
+            <span class="social-text">
+              <span class="social-name">Instagram</span>
+              <span class="social-meta">посмотреть</span>
+            </span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
 
-        <a class="social-link" href="#" aria-label="ВКонтакте Михаелы">
-          <span class="social-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <path d="M12.8 18.2C5.6 18.2 1.5 13.3 1.3 5h3.6c.1 6.1 2.8 8.7 4.9 9.2V5h3.4v5.3c2-.2 4-2.6 4.7-5.3h3.4a10.2 10.2 0 0 1-4.4 6.6c1.6.8 4.1 3 5.1 6.6h-3.8c-.8-2.6-2.7-4.6-5-4.9v4.9h-.4Z"/>
-            </svg>
-          </span>
-          <span>ВКонтакте</span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-      </nav>
+          <a class="social-link" href="#" aria-label="ВКонтакте Михаелы">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.8 18.2C5.6 18.2 1.5 13.3 1.3 5h3.6c.1 6.1 2.8 8.7 4.9 9.2V5h3.4v5.3c2-.2 4-2.6 4.7-5.3h3.4a10.2 10.2 0 0 1-4.4 6.6c1.6.8 4.1 3 5.1 6.6h-3.8c-.8-2.6-2.7-4.6-5-4.9v4.9h-.4Z"/>
+              </svg>
+            </span>
+            <span class="social-text">
+              <span class="social-name">ВКонтакте</span>
+              <span class="social-meta">перейти</span>
+            </span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </nav>
+      </section>
     </article>
   </main>
 </body>
